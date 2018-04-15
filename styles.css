@@ -1,0 +1,90 @@
+/* Colors */
+:root {
+  --u-blue: #02b3e4;
+  --u-text: #2d3c49;
+  --u-gray: #7d97ad;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+  margin: 1rem 0 1rem;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 950px) {
+  body {
+    width: 710px;
+    margin: 0 auto;
+  }
+}
+
+/* Header */
+header {
+  display: flex;
+  padding: 45px 0 25px;
+  margin-bottom: 25px;
+  border-bottom: 3px solid var(--u-gray);
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.developer {
+  margin-left: auto;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--u-text);
+}
+
+.developer h1 {
+  font-size: 44px;
+  margin: 0;
+}
+
+/* Hero */
+.hero {
+  margin-bottom: 25px;
+}
+
+/* Featured Work */
+.featured-work h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--u-gray);
+  margin: 0 0 15px;
+}
+
+/* Card */
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: var(--u-text);
+  margin: 0;
+}
+
+.card .project-url {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--u-text);
+
+}
+
+.card .project-url:hover {
+  text-decoration: underline;
+}
