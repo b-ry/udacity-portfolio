@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,47 +9,53 @@
   <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="/">
-        <img src="images/udacity-logo.svg" alt="">
-      </a>
-    </div>
-    <div class="developer">
-      <h1>Bryon Urbanec</h1>
-      <div>Front-end Ninja</div>
-    </div>
-  </header>
+  <div class="header-outter container">
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img src="images/udacity-logo.svg" alt="">
+        </a>
+      </div>
+      <div class="developer">
+        <h1>Bryon Urbanec</h1>
+        <div>Front-end Ninja</div>
+      </div>
+    </header>
+  </div>
 
   <main>
-    <div class="hero">
-      <img src="https://picsum.photos/710/300/?random" alt="">
+    <div class="hero container">
+      <picture>
+        <source media="(min-width: 710px)" srcset="https://picsum.photos/710/300/?random">
+        <source media="(min-width: 300px)" srcset="https://picsum.photos/300/150/?random">
+        <img src="https://picsum.photos/710/300/?random" alt="">
+      </picture>
     </div>
 
-    <div class="featured-work">
+    <div class="featured-work-wrapper">
+      <div class="featured-work container">
+        <h2>Featured Work</h2>
+        
+        <div class="card-wrapper">
+          <div class="card">
+            <img src="https://picsum.photos/225/145/?random" alt="">
+            <h3 class="project-title">Appify</h3>
+            <a href="https://github.com/udacity/Appify" class="project-url" target="_blank">https://github.com/udacity/Appify</a>
+          </div>
 
-      <h2>Featured Work</h2>
-      
-      <div class="card-wrapper">
-        <div class="card">
-          <img src="https://picsum.photos/225/145/?random" alt="">
-          <h3 class="project-title">Appify</h3>
-          <a href="https://github.com/udacity/Appify" class="project-url" target="_blank">https://github.com/udacity/Appify</a>
-        </div>
+          <div class="card">
+            <img src="https://picsum.photos/225/145/?random" alt="">
+            <h3 class="project-title">Sunflower</h3>
+            <a href="https://github.com/udacity/Sunflower" class="project-url" target="_blank">https://github.com/udacity/Sunflower</a>
+          </div>
 
-        <div class="card">
-          <img src="https://picsum.photos/225/145/?random" alt="">
-          <h3 class="project-title">Sunflower</h3>
-          <a href="https://github.com/udacity/Sunflower" class="project-url" target="_blank">https://github.com/udacity/Sunflower</a>
-        </div>
-
-        <div class="card">
-          <img src="https://picsum.photos/225/145/?random" alt="">
-          <h3 class="project-title">Bokeh</h3>
-          <a href="https://github.com/udacity/Bokeh" class="project-url" target="_blank">https://github.com/udacity/Bokeh</a>
+          <div class="card">
+            <img src="https://picsum.photos/225/145/?random" alt="">
+            <h3 class="project-title">Bokeh</h3>
+            <a href="https://github.com/udacity/Bokeh" class="project-url" target="_blank">https://github.com/udacity/Bokeh</a>
+          </div>
         </div>
       </div>
-
     </div>
 
   </main>
